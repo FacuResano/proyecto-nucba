@@ -1,0 +1,84 @@
+/*===== FUENTE ====*/
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*============= VARIABLES ==============*/
+:root{
+    /*bg colors*/
+    --background: #0e020c; 
+    --primary: #49082c;
+    --secondary: #231527;
+    --btn-bg: #260522;
+    --bg-azul-10: #e9eeff;
+    --bg-white: #fff;
+    --bg-electric: #f0fbff;
+    --nav-bg: #1e0f25;
+
+    /* text colors */
+    --text-gray: #adb9c7;
+    --text-white: #f3f4f6;
+
+    /* decoration */
+    --fire: #ff6d00;
+    --electric: #c664ff;
+}
+
+/*============= RESET ==============*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: var(--background);
+}
+
+/*============= HEADER ==============*/
+
+header{
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    height: 60px;
+    position: fixed;
+    width: 100%; /*para que ocupe el 100%*/
+}
+
+.navbar, .navbar-list { /* se acplica "," para no escribir tanto codigo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar{
+    gap: 120px;
+}
+
+.navbar-list{
+    gap: 20px;
+}
+
+.navbar-list a {
+    color: var(--text-gray);
+    font-size: 15px;
+}
+
+/* PSEUDOCLASES
+.navbar-list li:first-child > a {
+    font-weight: 600;
+    color: var(--text-white)
+} */
+
+.navbar-list .active{
+    font-weight: 600;
+    color: var(--text-white)
+}
+
+.logo{
+    height: 70%;
+}
